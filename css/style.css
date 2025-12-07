@@ -18,6 +18,8 @@ nav::after {
   position: absolute;
   right: 10%;
 }
+
+/* Main */
 .main .container {
   height: 100vh;
   position: relative;
@@ -46,6 +48,8 @@ nav::after {
   font-size: 1.2em;
   color: #666;
 }
+
+/* Contents Section */
 .con_contain {
   height: 100vh;
   position: relative;
@@ -111,4 +115,75 @@ nav::after {
   color: #fff;
   background-color: green;
   border: none;
+}
+
+/* modal */
+.modal_container {
+  width: 80%;
+  background: #f1f1f1;
+  position: relative;
+}
+.modal_container .modal_btn {
+  position: absolute;
+  top: 60px;
+  right: -40px;
+  padding: 15px;
+  color: #fff;
+  font-weight: bold;
+  background-color: green;
+  z-index: 999;
+  cursor: pointer;
+}
+.modal_container .modal_btn::before {
+  content: '';
+  width: 120px;
+  height: 45px;
+  background-color: #fff;
+  z-index: 999;
+  position: absolute;
+  right: 40px;
+  top: 1px;
+  opacity: 0.5;
+}
+.modal_container .modal_btn::after {
+  content: '';
+  width: 40px;
+  height: 45px;
+  background-color: #666;
+  position: absolute;
+  top: 70px;
+  right: 0px;
+}
+.modal_container .modal_tit {
+  height: 250px;
+  overflow: hidden;
+  position: relative;
+  background-color: #000;
+}
+.modal_container .modal_tit img {
+  width: 100%;
+  opacity: 0.3;
+}
+.modal_container .modal_tit .modal_tit_con {
+  padding: 30px;
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  line-height: 40px;
+}
+.modal_container .modal_tit .modal_tit_con h1 {
+  font-size: 2.2em;
+  font-weight: bold;
+}
+.modal_container .modal_con {
+  padding: 60px;
+  height: 50vh;
+  display: flex;
+  gap: 60px;
+  color: #454545;
+  line-height: 1.5;
+  overflow-y: scroll;
+}
+.modal_container .modal_con .modal_img {
+  border: 1px solid red;
 }
