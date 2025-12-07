@@ -1,0 +1,114 @@
+@import url(/css/reset.css);
+
+body {
+  background-color: #f9f9f9;
+}
+nav {
+  width: 5%;
+  height: 100vh;
+  background-color: green;
+  position: fixed;
+  z-index: 1;
+}
+nav::after {
+  content: '';
+  width: 1px;
+  height: 100vh;
+  border-right:3px dashed #fff;
+  position: absolute;
+  right: 10%;
+}
+.main .container {
+  height: 100vh;
+  position: relative;
+}
+.main .container .top_sub_txt {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  font-size: 3em;
+  color: #666;
+  border-bottom: 1px solid #666;
+  padding-bottom: 20px;
+}
+.main .container .main_txt {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 4.5em;
+  text-align: center;
+}
+.main .container .contents {
+  position: absolute;
+  bottom: 10%;
+  right: 10%;
+  font-size: 1.2em;
+  color: #666;
+}
+.con_contain {
+  height: 100vh;
+  position: relative;
+}
+.con_contain .container {
+  position: absolute;
+  top: 5%;
+  left: 13%;
+}
+.con_contain .top_sub_txt {
+  text-align: center;
+  font-size: 1.5em;
+  color: #666;
+  border-bottom: 1px solid #666;
+  padding-bottom: 15px;
+  margin-bottom: 3%;
+}
+.contain_content {
+  margin-top: 25px;
+  width: 80vw;
+  height: 230px;
+  display: flex;
+  gap: 60px;
+  border-bottom: 1px solid #333;
+  overflow: hidden;
+}
+.con_contain .con_items {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.con_contain .con_items img {
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+}
+.con_contain:hover .con_items img {
+  width: 120%;
+}
+.con_contain .con_text {
+  position: relative;
+}
+.con_contain .con_text h1 {
+  margin-bottom: 10px;
+  font-size: 2em;
+  font-weight: bold;
+}
+.con_contain .con_text p {
+  line-height: 1.8;
+}
+.con_contain .con_text .con_btn {
+  width: 120px;
+  padding: 10px 5px;
+  text-align: center;
+  color: green;
+  border: 1px solid green;
+  border-radius: 5px;
+  position: absolute;
+  right: 2%;
+  bottom: 10%;
+}
+.con_contain .con_text .con_btn:hover {
+  color: #fff;
+  background-color: green;
+  border: none;
+}
